@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "marquee_texts",
+  "info": {
+    "singularName": "marquee-text",
+    "pluralName": "marquee-texts",
+    "displayName": "marqueeText"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

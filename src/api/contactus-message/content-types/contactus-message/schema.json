@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contactus_messages",
+  "info": {
+    "singularName": "contactus-message",
+    "pluralName": "contactus-messages",
+    "displayName": "contactus-message"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "event"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "shortDescription": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "eventDate": {
+      "type": "datetime"
+    },
+    "location": {
+      "type": "string"
+    },
+    "registrationLink": {
+      "type": "string"
+    },
+    "eventCategory": {
+      "type": "enumeration",
+      "enum": [
+        "hackathon",
+        "seminar",
+        "meetup"
+      ]
+    },
+    "eventStatus": {
+      "type": "enumeration",
+      "enum": [
+        "ongoing",
+        "upcoming",
+        "past"
+      ]
+    },
+    "enrolled": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "json"
+    },
+    "schedule": {
+      "type": "json"
+    },
+    "requirements": {
+      "type": "json"
+    },
+    "prizePool": {
+      "type": "string"
+    },
+    "organizerName": {
+      "type": "string"
+    },
+    "organizerTitle": {
+      "type": "string"
+    },
+    "organizerImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sponsors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::sponsor.sponsor",
+      "mappedBy": "events"
+    }
+  }
+}
